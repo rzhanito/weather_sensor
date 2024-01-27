@@ -1,20 +1,17 @@
 package ru.rzhanito.sensor.service;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import ru.rzhanito.sensor.entity.MeasurementEntity;
 import ru.rzhanito.sensor.entity.SensorEntity;
 import ru.rzhanito.sensor.exception.SensorNotFoundException;
 import ru.rzhanito.sensor.model.Measurement;
-import ru.rzhanito.sensor.model.Sensor;
 import ru.rzhanito.sensor.repository.MeasurementRepo;
 import ru.rzhanito.sensor.repository.SensorRepo;
 
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor

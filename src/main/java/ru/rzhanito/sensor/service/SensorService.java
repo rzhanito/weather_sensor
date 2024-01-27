@@ -1,9 +1,6 @@
 package ru.rzhanito.sensor.service;
 
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import ru.rzhanito.sensor.entity.SensorEntity;
 import ru.rzhanito.sensor.exception.SensorAlreadyExistsException;
