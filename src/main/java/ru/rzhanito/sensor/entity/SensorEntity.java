@@ -25,7 +25,7 @@ public class SensorEntity {
     @Size(min = 3, max = 30, message = "Название сенсора должно быть в диапазоне 3-30 символов.")
     private String name;
 
-    @OneToMany(mappedBy = "sensor", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "sensor", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JsonIgnore
     private List<MeasurementEntity> measurements;
 }
